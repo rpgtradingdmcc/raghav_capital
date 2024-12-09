@@ -1,0 +1,191 @@
+/* styles.css */
+
+/* Reset body and html margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the navbar doesn't push content */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Adjust sections to fit seamlessly */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  /* backdrop-filter: blur(150px); */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  /* position: fixed; Ensure the navbar is fixed */
+  width: 100%;
+  z-index: 10;
+}
+/* Ensure the logo image fits within the navbar */
+.navbar-brand img {
+   height: 100px;
+   margin-left: 10vw;
+}
+  
+/* Align navbar items to the right */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 10vw;
+  font-weight: bold;
+}
+
+/* styles.css */
+
+
+/* Hero Section */
+.hero-image {
+  height: 100vh; /* Full viewport height */
+  background-image: url("images/Cover_page.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+  margin-top: -125px;
+}
+
+.hero-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Makes text stand out */
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text .btn {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  z-index: 3;
+}
+
+/* Half Image and Text Section */
+.half-image-text {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.half-image {
+  flex: 1;
+  background-image: url("images/computer-dark-room-with-graphs-screen.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: auto;
+}
+
+.half-text {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f9fa; /* Light background for text */
+  color: #010545;
+}
+
+.half-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.half-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.half-text .btn {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+  background-color: #010545;
+}
+
+
+/* Footer Section 1: Navigation Details */
+.footer-nav {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-nav h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav ul li a {
+  color: #495057;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Footer Section 2: Copyright */
+.footer-copyright {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Design for Footers */
+@media (max-width: 768px) {
+  .footer-nav .row {
+      text-align: center;
+  }
+
+  .footer-nav .col-lg-4 {
+      margin-bottom: 30px;
+  }
+}
+
+
