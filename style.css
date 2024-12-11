@@ -186,6 +186,62 @@ section {
   color: #007bff;
 }
 
+/* Locations Section */
+.locations {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.locations .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #010545;
+  margin-bottom: 2rem;
+}
+
+.locations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.location {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.map iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.address {
+  text-align: left;
+}
+
+.address h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.address p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
 /* Footer Section 1: Navigation Details */
 .footer-nav {
   background-color: #f8f9fa;
