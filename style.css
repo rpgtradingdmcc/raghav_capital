@@ -132,6 +132,59 @@ section {
   background-color: #010545;
 }
 
+/* Key People Section */
+.key-people {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.key-people .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #010545;
+  margin-bottom: 2rem;
+}
+
+.key-people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.person {
+  text-align: center;
+  position: relative;
+}
+
+.person-canvas {
+  background-color: #e9ecef; /* Placeholder for the canvas */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.person-details {
+  margin-top: 1rem;
+}
+
+.person-details h3 {
+  font-size: 1.5rem;
+  color: #010545;
+}
+
+.person-details p {
+  font-size: 1rem;
+  color: #007bff;
+}
 
 /* Footer Section 1: Navigation Details */
 .footer-nav {
